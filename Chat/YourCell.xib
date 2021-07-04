@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="yourCell" rowHeight="211" id="tB5-Jc-jeQ" customClass="YourCell" customModule="TRIDZ" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="211"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tB5-Jc-jeQ" id="jDj-i2-lJ3">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="211"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="neS-bm-8k9">
+                        <rect key="frame" x="60" y="10" width="28.5" height="179"/>
+                        <color key="backgroundColor" red="0.94116765260000002" green="0.94117051360000004" blue="0.94117683169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" name="AccentColor"/>
+                        <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="\" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2iJ-WI-5ZR">
+                        <rect key="frame" x="64" y="15" width="14.5" height="169"/>
+                        <color key="textColor" systemColor="labelColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020.1.1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWO-Gz-ROQ">
+                        <rect key="frame" x="60" y="189" width="40" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intersection 2" translatesAutoresizingMaskIntoConstraints="NO" id="5Ob-o2-yKM">
+                        <rect key="frame" x="10" y="90.5" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="3PL-WK-1a4"/>
+                            <constraint firstAttribute="width" constant="30" id="8WN-ZC-qGz"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PcW-1b-iKJ">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="211"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                        <connections>
+                            <action selector="goPopup:" destination="tB5-Jc-jeQ" eventType="touchUpInside" id="UMo-gA-ZAW"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2iJ-WI-5ZR" firstAttribute="trailing" secondItem="neS-bm-8k9" secondAttribute="trailing" constant="-10" id="0rr-DI-DbR"/>
+                    <constraint firstItem="kWO-Gz-ROQ" firstAttribute="leading" secondItem="5Ob-o2-yKM" secondAttribute="trailing" constant="20" id="1T6-Fx-N0i"/>
+                    <constraint firstItem="neS-bm-8k9" firstAttribute="leading" secondItem="5Ob-o2-yKM" secondAttribute="trailing" constant="20" id="66I-er-Ngk"/>
+                    <constraint firstItem="2iJ-WI-5ZR" firstAttribute="leading" secondItem="neS-bm-8k9" secondAttribute="leading" constant="4" id="8cR-iC-Mce"/>
+                    <constraint firstItem="5Ob-o2-yKM" firstAttribute="centerY" secondItem="jDj-i2-lJ3" secondAttribute="centerY" id="OED-pM-CYb"/>
+                    <constraint firstAttribute="trailing" secondItem="PcW-1b-iKJ" secondAttribute="trailing" id="P8v-fQ-0j8"/>
+                    <constraint firstItem="5Ob-o2-yKM" firstAttribute="leading" secondItem="jDj-i2-lJ3" secondAttribute="leading" constant="10" id="TOx-D8-fGy"/>
+                    <constraint firstItem="PcW-1b-iKJ" firstAttribute="leading" secondItem="jDj-i2-lJ3" secondAttribute="leading" id="WW1-CZ-hg5"/>
+                    <constraint firstItem="neS-bm-8k9" firstAttribute="top" secondItem="jDj-i2-lJ3" secondAttribute="top" constant="10" id="ZSJ-qq-FT4"/>
+                    <constraint firstItem="kWO-Gz-ROQ" firstAttribute="top" secondItem="neS-bm-8k9" secondAttribute="bottom" id="cr2-Db-POp"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kWO-Gz-ROQ" secondAttribute="trailing" constant="40" id="cxL-cr-v50"/>
+                    <constraint firstAttribute="bottom" secondItem="PcW-1b-iKJ" secondAttribute="bottom" id="dbu-1V-jpB"/>
+                    <constraint firstItem="2iJ-WI-5ZR" firstAttribute="top" secondItem="neS-bm-8k9" secondAttribute="top" constant="5" id="f5n-XA-oqN"/>
+                    <constraint firstAttribute="bottom" secondItem="kWO-Gz-ROQ" secondAttribute="bottom" constant="10" id="hqo-6r-3LE"/>
+                    <constraint firstItem="2iJ-WI-5ZR" firstAttribute="bottom" secondItem="neS-bm-8k9" secondAttribute="bottom" constant="-5" id="m0f-H8-V6K"/>
+                    <constraint firstItem="PcW-1b-iKJ" firstAttribute="top" secondItem="jDj-i2-lJ3" secondAttribute="top" id="n75-OK-5ed"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="fNI-Zz-Iss"/>
+            <connections>
+                <outlet property="myCellBackView" destination="neS-bm-8k9" id="iHM-cS-5My"/>
+                <outlet property="yourCellTextView" destination="2iJ-WI-5ZR" id="JSt-DE-mea"/>
+            </connections>
+            <point key="canvasLocation" x="2.1739130434782612" y="150.33482142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Intersection 2" width="100" height="100"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
