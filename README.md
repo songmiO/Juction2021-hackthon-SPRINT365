@@ -6,7 +6,15 @@
 
 ## Period
 
-## Participation part
+## Skills
+
+- swift
+
+## Tool
+
+- discord
+
+## 👩🏻‍💻 Participation part
 
 - 채팅 화면에서 UIserachController를 활용하여 검색바 구현 
 - 검색창 밑, 업무별 카테고리 나열 (segment control)
