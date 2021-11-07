@@ -16,8 +16,5 @@
 
 ## 👩🏻‍💻 Participation part
 
-- 채팅 화면에서 UIserachController를 활용하여 검색바 구현 
-- 검색창 밑, 업무별 카테고리 나열 (segment control)
-
-- 부족한 점 
-: UITableViewController 구현 - practing 필요
+- 채팅 화면 내, 검색 창 구현 - UISearchController 사용
+- 검색창 밑, 업무별 카테고리 나열 - Segment Control 사용
