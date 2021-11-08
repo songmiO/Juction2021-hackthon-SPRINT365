@@ -1,6 +1,6 @@
 # Juction2021 hackthon
 
-# SPRINT 365
+# TRIDZ
 
 ## Topic
 
